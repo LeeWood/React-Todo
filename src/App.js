@@ -1,6 +1,24 @@
 import React from 'react';
 import TodoForm from './components/TodoComponents/TodoForm';
 
+const testItems = [
+  {
+    task: "Cool thing!",
+    id: 1,
+    completed: "false"
+  },
+  {
+    task: "Cool thing 2",
+    id: 2,
+    completed: "false"
+  },
+  {
+    task: "Cool thing 3",
+    id: 3,
+    completed: "false"
+  }
+];
+
 class App extends React.Component {
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
@@ -8,15 +26,19 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      
-    }
+      tasks: testItems,
+      testState: "cool state"
+    };
   }
 
   render() {
     return (
-      <div>
-        <h2>Welcome to your Todo App!</h2>
-        <TodoForm />
+      <div className = "App">
+        <div>
+          <h2>Welcome to your Todo App!</h2>
+          <TodoForm />
+        </div>
+        
       </div>
     );
   }
