@@ -63,6 +63,7 @@ class App extends React.Component {
         <div className="app-head">
           <h1>Do It Why Dontcha?! </h1>
         </div>
+          <main>
           <div className="form-section">
             <TodoForm 
               addTask = {this.addTask}
@@ -75,6 +76,7 @@ class App extends React.Component {
             toggleCompleted = {this.toggleCompleted}
           />
           </div>
+          </main>
       </div>
     );
   }
