@@ -36,8 +36,8 @@ class App extends React.Component {
     console.log("added ", taskName);
 
     this.setState({
-      testItems: [
-        ...this.state.testState,
+      tasks: [
+        ...this.state.tasks,
         {
           task: taskName,
           id: Date.now(),
