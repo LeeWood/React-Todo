@@ -3,7 +3,9 @@ import Todo from './Todo';
 
 const TodoList = props => {
   return (
+    <>
     <div className = "list">
+      <h2>New Tasks</h2>
       {props.tasks.map(task => (
         <Todo 
           key={task.id}
@@ -12,6 +14,10 @@ const TodoList = props => {
         />
       ))}
     </div>
+    <div className="comp-list">
+      <h2>Completed</h2>
+    </div>
+    </>
   )
 }
 

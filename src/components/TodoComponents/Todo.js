@@ -1,5 +1,5 @@
 import React from 'react';
-import './Todo.css';
+import '../../styling/Todo.css';
 
 const Todo = props => {
   let toggleClass = "task";
@@ -13,7 +13,7 @@ const Todo = props => {
 
   return (
     <div onClick={handleClick} className={toggleClass}>
-      <p>{props.task.task}</p>
+      <p className="task-item">{props.task.task}</p>
     </div>
   );
 };

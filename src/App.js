@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoForm from './components/TodoComponents/TodoForm';
 import TodoList from './components/TodoComponents/TodoList';
+import './styling/App.css';
 
 const todoTasks = [];
 
@@ -59,18 +60,21 @@ class App extends React.Component {
   render() {
     return (
       <div className = "App">
-        <div>
-          <h2>Welcome to your Todo App!</h2>
-          <TodoForm 
-            addTask = {this.addTask}
-            clearCompleted = {this.clearCompleted}
-          />
+        <div className="app-head">
+          <h1>Do It Why Dontcha?! </h1>
         </div>
-        <TodoList 
-          tasks = {this.state.tasks}
-          toggleCompleted = {this.toggleCompleted}
-        />
-
+          <div className="form-section">
+            <TodoForm 
+              addTask = {this.addTask}
+              clearCompleted = {this.clearCompleted}
+            />
+          </div>
+          <div className="lists">
+          <TodoList 
+            tasks = {this.state.tasks}
+            toggleCompleted = {this.toggleCompleted}
+          />
+          </div>
       </div>
     );
   }
