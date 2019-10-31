@@ -1,4 +1,13 @@
+
+.task:hover {
+  cursor: pointer;
+}
+
 .taskcompleted {
   color: lightgray;
   text-decoration: line-through;
+}
+
+.taskcompleted:hover {
+  cursor: pointer;
 }
