@@ -1,14 +1,19 @@
 import React from 'react';
+import './Todo.css';
 
 const Todo = props => {
+  let toggleClass = "task";
+  if (props.task.completed) {
+    toggleClass += "completed";
+  }
 
   const handleClick = () => {
-    console.log(`you clicked ${props.item.task}!`);
+    props.toggleCompleted(props.task.id);
   };
 
   return (
-    <div onClick={handleClick}>
-      <p>{props.item.task}</p>
+    <div onClick={handleClick} className={toggleClass}>
+      <p>{props.task.task}</p>
     </div>
   );
 };
