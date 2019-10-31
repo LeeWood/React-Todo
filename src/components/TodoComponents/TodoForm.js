@@ -16,8 +16,13 @@ class TodoForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state.todo);
-  }
+    if (this.state.todo !== "") {
+      this.props.addTask(this.state.todo);
+      this.setState({
+        todo: ""
+      });
+    }
+  };
 
   render() {
     //console.log("...rendering form"); form functionality working

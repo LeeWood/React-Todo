@@ -6,17 +6,17 @@ const testItems = [
   {
     task: "Cool thing!",
     id: 1,
-    completed: "false"
+    completed: false
   },
   {
     task: "Cool thing 2",
     id: 2,
-    completed: "false"
+    completed: false
   },
   {
     task: "Cool thing 3",
     id: 3,
-    completed: "false"
+    completed: false
   }
 ];
 
@@ -32,12 +32,27 @@ class App extends React.Component {
     };
   }
 
+  addTask = taskName => {
+    console.log("added ", taskName);
+
+    this.setState({
+      testItems: [
+        ...this.state.testState,
+        {
+          task: taskName,
+          id: Date.now(),
+          completed: false
+        }
+      ]
+    });
+  };
+
   render() {
     return (
       <div className = "App">
         <div>
           <h2>Welcome to your Todo App!</h2>
-          <TodoForm />
+          <TodoForm addTask={this.addTask}/>
         </div>
         <TodoList 
           tasks = {this.state.tasks}
