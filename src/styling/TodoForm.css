@@ -21,8 +21,12 @@ form {
 }
 
 button {
-  height: 2rem;
+  height: 2.25rem;
   width: 130px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .add-btn {
