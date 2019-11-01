@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styling/TodoForm.css';
 
 class TodoForm extends React.Component {
   constructor() {
@@ -27,17 +28,23 @@ class TodoForm extends React.Component {
   render() {
     //console.log("...rendering form"); form functionality working
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input 
-          onChange={this.handleChange}
-          type = "text"
-          name = "todo"
-          value = {this.state.todo} 
-          placeholder = "Enter A New Task!"
-        />
-        <button>Add</button>
-        <button onClick={this.props.clearCompleted}>Clear Completed</button>
-      </form>
+      <div className="form-container">
+        <form onSubmit={this.handleSubmit}>
+          <input 
+            className="text-bar"
+            onChange={this.handleChange}
+            type = "text"
+            name = "todo"
+            value = {this.state.todo} 
+            placeholder = "Enter A New Task!"
+          />
+          <div className="buttons">
+            <button className="add-btn">Add Task</button>
+            <button className="clear-btn" onClick={this.props.clearCompleted}>Clear Completed</button>
+          </div>
+        </form>
+      </div>
+      
     );
   }
 }

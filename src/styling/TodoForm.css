@@ -1,0 +1,41 @@
+.form-container {
+  padding: 0 3.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-bar {
+  border-color: #67AFE3;
+  border-radius: 20px;
+  border-style: solid;
+  padding-left: 15px;
+  height: 2rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  height: 2rem;
+  width: 130px;
+}
+
+.add-btn {
+  background-color: #87CBC0;
+  border: 1px solid #87CBC0;
+  border-radius: 3px;
+  color: white;
+}
+
+.clear-btn {
+  margin-left: 15px;
+  background-color: transparent;
+  border: 2px solid #E95251;
+  border-radius: 3px;
+  color: #E95251;
+}
