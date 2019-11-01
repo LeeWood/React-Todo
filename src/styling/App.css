@@ -21,6 +21,7 @@ main {
   filter: drop-shadow(0 0 0.5rem lightgray);
   padding: 15px 0;
   border-radius: 10px;
+  overflow: auto;
 }
 
 .form-section {

@@ -1,11 +1,12 @@
 import React from 'react';
 import Todo from './Todo';
+import '../../styling/TodoList.css';
 
 const TodoList = props => {
   return (
-    <div className="list-conainer">
+    <div className="list-container">
       <div className = "list">
-        <h2>Todo</h2>
+        <h2 className="list-title">Todo</h2>
         {props.tasks.map(task => (
           <Todo 
             key={task.id}
@@ -15,7 +16,7 @@ const TodoList = props => {
         ))}
       </div>
       <div className="comp-list">
-        <h2>Completed</h2>
+        <h2 className="list-title">Completed</h2>
       </div>
     </div>
   )
