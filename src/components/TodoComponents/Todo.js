@@ -13,7 +13,9 @@ const Todo = props => {
 
   return (
     <div onClick={handleClick} className={toggleClass}>
-      <p className="task-item">{props.task.task}</p>
+        <p className="task-item">
+        <i class="far fa-check-circle" /> {props.task.task}
+      </p>
     </div>
   );
 };
