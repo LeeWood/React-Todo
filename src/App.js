@@ -3,7 +3,13 @@ import TodoForm from './components/TodoComponents/TodoForm';
 import TodoList from './components/TodoComponents/TodoList';
 import './styling/App.css';
 
-const todoTasks = [];
+const todoTasks = [
+  {
+    task: "Add your first task!",
+    id: 1,
+    completed: false
+  }
+];
 
 class App extends React.Component {
   //// you will need a place to store your state in this component.
