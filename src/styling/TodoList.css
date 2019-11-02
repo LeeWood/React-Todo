@@ -14,6 +14,10 @@
   display: none;
 }
 
+.list {
+  margin-bottom: 50px;
+}
+
 .noncomp .taskcompleted {
   display: none;
 }
