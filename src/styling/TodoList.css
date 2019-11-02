@@ -6,3 +6,15 @@
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
+.comp .taskcompleted {
+  display: flex;
+}
+.comp .task {
+  display: none;
+}
+
+.noncomp .taskcompleted {
+  display: none;
+}
+
