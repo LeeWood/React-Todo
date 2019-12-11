@@ -1,0 +1,23 @@
+
+.task:hover {
+  cursor: pointer;
+}
+
+.taskcompleted {
+  color: lightgray;
+  text-decoration: line-through;
+  margin-bottom: 20px;
+  border-bottom: .75px solid lightgray;
+  padding-bottom: 15px;
+}
+
+.taskcompleted:hover {
+  cursor: pointer;
+}
+
+.task {
+  margin-bottom: 20px;
+  border-bottom: .75px solid lightgray;
+  padding-bottom: 15px;
+}
+

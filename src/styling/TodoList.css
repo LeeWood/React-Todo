@@ -1,0 +1,24 @@
+.list-container {
+  padding: 0 3.5rem;
+}
+
+.list-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.comp .taskcompleted {
+  display: flex;
+}
+.comp .task {
+  display: none;
+}
+
+.list {
+  margin-bottom: 50px;
+}
+
+.noncomp .taskcompleted {
+  display: none;
+}
+
